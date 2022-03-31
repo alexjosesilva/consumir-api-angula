@@ -1,0 +1,44 @@
+
+<mat-card class="mat-elevation-z8">
+  <mat-card-title>Cadastrar Alunos</mat-card-title>
+    <form class="example-form">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Apenas inseria seu nome..." value=""  name="nome" [(ngModel)]="aluno.nome"/>
+      </mat-form-field>
+      <br />
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Idade</mat-label>
+        <input matInput placeholder="Sem medo.. .qual tua idade ?" name="idade"  [(ngModel)]="aluno.idade" />
+      </mat-form-field>
+      <br />
+      <button mat-raised-button color="primary" type="submit" (click)="cadastrarAluno()">Salvar</button>
+      <button mat-raised-button color="warn" type="reset">Limpar</button>
+    </form>
+  </mat-card>
+
+
+
+<table mat-table class="mat-elevation-z8">
+  <tr>
+    <th colspan="5">Alunos Cadastrados</th>
+  </tr>
+  <tr>
+    <th>id</th>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th colspan="2">Acoes</th>
+  </tr>
+
+ 
+  <tr  *ngFor="let aluno of alunos_array">
+    <td >{{aluno.id}}</td>
+    <td>{{aluno.nome}}</td>
+    <td>{{aluno.idade}}</td>
+    <td> <button (click)="atualizarAluno(aluno.id)" mat-raised-button color="accent" > Atualizar</button> </td>
+    <td> <button (click)="removerAluno(aluno.id)"  mat-raised-button color="warn"> Remover</button> </td>
+  </tr>
+ 
+</table>
+
+
