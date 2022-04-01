@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/alexjosesilva/consumir-api-angula.svg?branch=master)](https://app.travis-ci.com/alexjosesilva/consumir-api-angula)
+
 # consumir-api-angula
 
 Neste repostorio apresento como consumir uma API Rest, partindo do ZERO e realizando um CRUD COMPLETO, 
