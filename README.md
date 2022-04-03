@@ -1,4 +1,4 @@
-# consumir-api-angula
+# consumir-api-angula  [![Build Status](https://app.travis-ci.com/alexjosesilva/consumir-api-angula.svg?branch=master)](https://app.travis-ci.com/alexjosesilva/consumir-api-angula)
 
 Neste repostorio apresento como consumir uma API Rest, partindo do ZERO e realizando um CRUD COMPLETO, 
 utilizando JSON Server para criação da API Mockada e Angular 12.
