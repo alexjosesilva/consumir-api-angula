@@ -46,3 +46,8 @@ Thumbs.db
 
 .browserslistrc
 .editorconfig
+
+
+.gitignore.bak
+README.md.bak
+package-lock.json
