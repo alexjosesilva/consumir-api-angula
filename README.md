@@ -42,7 +42,7 @@ e criar um arquivo json: aluno.json com esse seguinte aspecto:
     }
   ]
 }
-```
+´´´
 
 ## Front
 
