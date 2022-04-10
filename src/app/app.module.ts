@@ -36,7 +36,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatInputModule,
     MatNativeDateModule   
   ],
-  providers: [AlunosService,HttpClientModule,HttpClient],
+  providers: [AlunosComponent,AlunosService,HttpClientModule,HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
