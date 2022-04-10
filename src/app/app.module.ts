@@ -6,7 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AlunosComponent } from './alunos/alunos.component';
 import { AlunosService } from './alunos/alunos.service';
@@ -26,7 +25,6 @@ import {MatNativeDateModule} from '@angular/material/core';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule, 
@@ -37,7 +35,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatInputModule,
     MatNativeDateModule
   ],
-  providers: [AlunosService,HttpClientModule,HttpModule],
+  providers: [AlunosService,HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
