@@ -6,7 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AlunosComponent } from './alunos/alunos.component';
 import { AlunosService } from './alunos/alunos.service';
 import { importType } from '@angular/compiler/src/output/output_ast';
