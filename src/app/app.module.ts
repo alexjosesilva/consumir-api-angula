@@ -6,7 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AlunosComponent } from './alunos/alunos.component';
 import { AlunosService } from './alunos/alunos.service';
@@ -26,6 +25,7 @@ import {MatNativeDateModule} from '@angular/material/core';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClient,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule, 
@@ -34,11 +34,9 @@ import {MatNativeDateModule} from '@angular/material/core';
     ReactiveFormsModule,
     MatButtonModule,
     MatInputModule,
-    MatNativeDateModule,
-    HttpClientTestingModule,
-    HttpTestingController
+    MatNativeDateModule   
   ],
-  providers: [AlunosService,HttpClientModule],
+  providers: [AlunosService,HttpClientModule,HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
